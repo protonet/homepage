@@ -17,7 +17,7 @@ configure :development do
 end
 
 before do
-  @config = YAML::load(File.open("config.yml"))
+  @config = YAML::load(File.open(File.dirname(__FILE__) + "/config.yml"))
 end
 
 helpers do
