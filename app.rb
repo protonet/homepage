@@ -22,7 +22,7 @@ end
 
 helpers do
   def protonet
-    Protolink::Protonet.open(@config.protonet.host, @config.protonet.user, @config.protonet.pw)
+    Protolink::Protonet.open(@config["protonet"]["host"], @config["protonet"]["user"], @config["protonet"]["pw"])
   end
   
   def sales
