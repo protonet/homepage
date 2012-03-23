@@ -92,6 +92,7 @@ post '/contact' do
 end
 
 post '/github' do
-  system('git pull origin master && touch tmp/restart.txt')
+  system('cd /home/deploy/protonet/homepage/current && /usr/bin/git pull origin master')
+  system('cd /home/deploy/protonet/homepage/current && touch tmp/restart.txt ')
 end
 
