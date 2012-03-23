@@ -16,7 +16,7 @@ set :deploy_to, "/home/deploy/protonet/homepage"
 set :use_sudo, false
 
 set :deploy_via, :remote_cache
-set :repository,  'git@github.com:henningthies/homepage.git'
+set :repository,  'git://github.com/henningthies/homepage.git'
 set :ssh_options, {:forward_agent => true}
 set :port, 22100
 

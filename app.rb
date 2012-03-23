@@ -5,7 +5,7 @@ require 'rubygems'
 require 'sinatra'
 require 'protolink'
 require 'yaml'
-require 'net/http'
+require 'pony'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "public") }
@@ -27,6 +27,15 @@ helpers do
   
   def sales
     protonet.find_channel_by_name("sales")
+  end
+  
+  def message_body 
+    <<-MEEP
+Neue Nachricht von der Website:
+#{@name} <#{@email}>
+#{@message}
+#{(@tel == "" ? "" : "\nTel: #{@tel}")}
+     MEEP
   end
   
 end
@@ -55,30 +64,34 @@ post '/contact' do
   @tel = params[:tel]
   @message = params[:message]
   @index = true
-
+  @status = "error"
+  
   if settings.development?
     puts "**********"
-    puts "#{name} <#{email}>"
-    puts message + (tel == "" ? "" : "\nTel: #{tel}")
+    puts message_body
     puts "**********"
-    redirect "/?status=success"
+    @status = "success"
   else
     if params[:newsletter] == true
       
     end
     begin 
-      sales.speak(
-        <<-MEEP
-#{@name} <#{@email}>
-#{@message}
-#{(@tel == "" ? "" : "\nTel: #{@tel}")}
-        MEEP
-      )
+      sales.speak(message_body)
       @status = "success"
     rescue
-      @status = "error"
+      if Pony.mail( :to => "henning@protonet.info",
+           :from => "#{@email}",
+           :subject => "#{@name} via protonet.info",
+           :body => message_body
+         ) 
+        @status = "success"
+      end
     end
-    erb :index
   end
+  erb :index
+end
+
+post '/github/post_recieve_hook_target' do
+  system('git pull origin master && touch tmp/restart.txt')
 end
 
