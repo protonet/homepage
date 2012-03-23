@@ -141,11 +141,6 @@ footer p{
   font-size:12px;
   line-height:20px;
   text-decoration:none;
-  -webkit-transition: all 3s;  /* Saf3.2+, Chrome */
-       -moz-transition: all 3s;  /* FF4+ */
-        -ms-transition: all 3s;  /* IE10 */
-         -o-transition: all 3s;  /* Opera 10.5+ */
-            transition: all 3s;
 }
 #main nav li a:hover span{
   color:#ff7f31;
