@@ -91,7 +91,7 @@ post '/contact' do
   erb :index
 end
 
-post '/github/post_recieve_hook_target' do
+post '/github' do
   system('git pull origin master && touch tmp/restart.txt')
 end
 
