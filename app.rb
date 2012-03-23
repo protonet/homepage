@@ -9,7 +9,7 @@ require 'pony'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "public") }
-  enable :sessions
+  enable :sessions, :logging
 end
 
 configure :development do
