@@ -124,6 +124,11 @@ footer p{
   overflow:hidden;
   background: url(/img/shadow.jpg) center top no-repeat;
   padding:50px 50px 0;
+  -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+       -moz-transition: all 0.3s ease-out;  /* FF4+ */
+        -ms-transition: all 0.3s ease-out;  /* IE10 */
+         -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+            transition: all 0.3s ease-out;
 }
 #main nav li{
   width: 165px;
