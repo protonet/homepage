@@ -1,0 +1,244 @@
+body{
+  background:#ececec;
+  color:#1F1F1F;
+}
+body > header,
+body > footer{
+  padding: 30px 0px;
+  overflow:hidden;
+  margin:auto ;
+  width:900px;
+}
+a,
+a:visited{
+  color:#989898; 
+}
+a:hover{
+  color:#1F1F1F;
+}
+#error, #success{
+  position:absolute;
+  padding: 10px;
+  width:100%;
+  top:0;
+  text-align:center;
+  color:#fff;
+}
+#success{
+  background: rgb(0, 204, 0);
+  background: rgba(0, 204, 0, 0.8);
+}
+#error{
+  background: rgb(231, 92, 121);
+  background: rgba(231, 92, 121, 0.8);
+}
+
+header{
+  text-align:right;
+}
+header a img{
+  float:left;
+}
+header nav{
+  padding:18px 0;
+  font-size:16px;
+}
+header nav a,
+header nav a:visited {
+  text-decoration:none;
+  display:inline-block;
+  margin: 0 10px;
+  text-shadow: 1px 1px 0px #fff;
+}
+header nav a:hover,
+header nav a.active{
+  color:#1F1F1F;
+  border-bottom: 1px solid #ff7f31;
+}
+footer{
+  font-size:11px;
+}
+
+footer ul{
+  margin:0;
+  float:right;
+}
+footer ul li{
+  list-style:none;
+  display:inline-block;
+  margin: 0 10px;
+}
+footer ul li a{
+  text-decoration:none;
+}
+footer p{
+  margin:0;
+}
+#main{
+  box-sizing: border-box;
+  background:white;
+  border: 1px solid #ddd;
+  padding:50px;
+  margin:auto ;
+  width:980px;
+}
+#main .teaser,
+#main hgroup{
+  font-family: protonet, Verdana, sans-serif;
+}
+#main hgroup{
+  text-align:center;
+}
+#main .teaser{
+  margin: -20px 0 -40px;
+  padding: 20px 0 25px;
+  background:url(/img/teaser.png) right top no-repeat;
+  min-height: 375px;
+}
+#main hgroup h1,
+#main .teaser h1{
+  font-weight:normal;
+  font-size:40px;
+  margin:10px 0 0;
+}
+#main hgroup h1 span,
+#main .teaser h1 span{
+  color:#ff7f31;
+}
+#main .teaser p{
+  color:#777;
+  margin-top:0px;
+  font-size:20px;
+  line-height:24px;
+}
+#main .teaser .buy{
+  margin-right:10px;
+}
+#main .teaser p small{
+  font-size:12px;
+}
+#main nav{
+  margin: 0px -50px 50px;
+  overflow:hidden;
+  background: url(/img/shadow.jpg) center top no-repeat;
+  padding:50px 50px 0;
+}
+#main nav li{
+  width: 165px;
+  float:left;
+  position:relative;
+  margin: 0 5px;
+}
+#main nav img{
+  position:absolute;
+  top:0;
+  left:40px;
+}
+#main nav li a{
+  display:block;
+  font-size:12px;
+  line-height:20px;
+  text-decoration:none;
+}
+#main nav li a:hover span{
+  color:#ff7f31;
+  
+}
+#main nav li a span{
+  
+}
+#main nav li h3{
+  font-weight:normal;
+  font-size:14px;
+  margin-bottom:0;
+  padding-top:70px;
+  color:#666;
+}
+
+#main section{
+  border-top: 1px solid #ff7f31;
+  padding: 30px 0;
+  font-size:12px;
+  overflow:hidden;
+}
+#main section:first-child{
+  border:none;
+  padding-top:0px;
+}
+#main section#files img,
+#main section#global img,
+#main section#hardware-software img{
+  float: right;
+  margin: 40px 20px 30px 50px
+  
+}
+#main section#collaboration img,
+#main section#usability img,
+#main section#contact img{
+  float: left;
+  margin: 40px 50px 30px 20px;
+  
+}
+#main section#contact .facts{
+  float:left;
+  width:400px;
+}
+
+#main section#contact form{
+  margin-left: 436px;
+  padding: 20px;
+  background:#ececec;
+  border:1px solid #ddd;
+  width:400px;
+}
+#main #contact form h3{
+  margin-top:0;
+  font-weight:normal;
+}
+.input{
+  margin-bottom:10px;
+}
+.input label{
+  display:block;
+}
+.input input{
+  width: 240px;
+  padding:2px 3px;
+}
+.input textarea{
+  padding: 2px 3px;
+  width: 392px;
+  height: 100px;
+}
+
+
+#main section h2{
+  font-weight:normal;
+}
+#main section p{
+  color:#777;
+  line-height:22px;
+}
+#main #team{
+  border:none;
+  overflow:hidden;
+  padding: 30px 0px;
+}
+#main .member{
+  width: 252px;
+  float:left;
+  margin: 0 20px
+}
+#main .member:nth-child(4){
+  clear:left;
+}
+#main .member h3 span{
+  display:block;
+  color:#777;
+  font-weight:normal;
+  font-size:12px;
+}
+#main #office img{
+  float:right;
+  margin:0 0 0 50px;
+}

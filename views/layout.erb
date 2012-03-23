@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>protonet</title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <% if @status == "success" %>
+    <div id="success">Danke für die Nachricht, wir werden schnellstmöglich antworten.</div>
+  <% elsif @status == "error" %>
+    <div id="error">Ups, da ist etwas schief gelaufen.</div>
+  <% end %>
+
+  <header>
+
+    <a href="/" title="logo">
+      <img src="img/protonet.png" width="320" height="59" alt="Protonet">
+    </a>
+    <nav>
+      <a href="/" class="<%= 'active' if @index %>" title="Home">Home</a>
+      <a href="/team" class="<%= 'active' if @team %>" title="Team">Team</a>
+      <a href="http://demo.protonet.info" title="Demo">Demo</a>
+      <a href="http://blog.protonet.info" title="Blog">Blog</a>
+    </nav>
+  </header>
+  <div id="main">
+    <%= yield  %>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="http://blog.protonet.info">Blog</a></li>
+      <li><a href="/team#contact">Kontakt</a></li>
+      <li><a href="/impressum">Impressum</a></li>
+    </ul>
+
+    <p>&copy; copyright protonet 2012</p>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-29221251-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

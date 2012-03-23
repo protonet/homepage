@@ -1,0 +1,4 @@
+protonet:
+  host: https://localhost:3000
+  user: bot
+  pw: password
