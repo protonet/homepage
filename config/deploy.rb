@@ -14,7 +14,6 @@ set :application, "homepage"
 set :deploy_to, "/home/deploy/protonet/homepage"
 
 set :use_sudo, false
-set :rails_env, 'production'
 
 set :deploy_via, :remote_cache
 set :repository,  'git@github.com:henningthies/homepage.git'
@@ -26,14 +25,6 @@ role :web, "dev.henning-thies.de", :primary => true
 
 # tasks
 namespace :deploy do
-  task :start, :roles => :app do
-    run "touch #{current_path}/tmp/restart.txt"
-  end
-  
-  task :stop, :roles => :app do
-    # Do nothing.
-  end
-
   desc "Restart Application"
   task :restart, :roles => :app do
     run "touch #{current_path}/tmp/restart.txt"
