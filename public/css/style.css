@@ -225,7 +225,7 @@ footer p{
   float:left;
   margin: 0 20px
 }
-#main .member:nth-child(4){
+#main .member.new-line{
   clear:left;
 }
 #main .member h3 span{
