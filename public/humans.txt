@@ -1,43 +1,28 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
-
-
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
-
-/* THANKS */
-  Names (& URL):
+  Site: http://protonet.info
+  Twitter: @protonet
+  Location: Hamburg, Germany
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: html5shiv, jQuery
+  Software: Sinatra
 
+                    .---. .---.                                     __                   __ 
+                   :     : o   :    I approve of: ____  _________  / /_____  ____  ___  / /_
+               _..-:   o :     :-.._    /        / __ \/ ___/ __ \/ __/ __ \/ __ \/ _ \/ __/
+           .-''  '  `---' `---' "   ``-.        / /_/ / /  / /_/ / /_/ /_/ / / / /  __/ /_  
+         .'   "   '  "  .    "  . '  "  `.     / .___/_/   \____/\__/\____/_/ /_/\___/\__/  
+        :   '.---.,,.,...,.,.,.,..---.  ' ;   /_/
+        `. " `.                     .' " .'  
+         `.  '`.                   .' ' .'   
+          `.    `-._           _.-' "  .'  .----.
+            `. "    '"--...--"'  . ' .'  .'  o   `.
+            .'`-._'    " .     " _.-'`. :       o  :
+      jgs .'      ```--.....--'''    ' `:_ o       :
+        .'    "     '         "     "   ; `.;";";";'
+       ;         '       "       '     . ; .' ; ; ;
+      ;     '         '       '   "    .'      .-'
+      '  "     "   '      "           "    _.-' 
 
-
-                               -o/-
-                               +oo//-
-                              :ooo+//:
-                             -ooooo///-
-                             /oooooo//:
-                            :ooooooo+//-
-                           -+oooooooo///-
-           -://////////////+oooooooooo++////////////::
-            :+ooooooooooooooooooooooooooooooooooooo+:::-
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-
-                     -:+ooooooooooooooooo+:://////:--
-                       /ooooooooooooooooo+//////:-
-                      -ooooooooooooooooooo////-
-                      /ooooooooo+oooooooooo//:
-                     :ooooooo+/::/+oooooooo+//-
-                    -oooooo/::///////+oooooo///-
-                    /ooo+::://////:---:/+oooo//:
-                   -o+/::///////:-      -:/+o+//-
-                   :-:///////:-            -:/://
-                     -////:-                 --//:
-                       --                       -:
+  PROTONET
