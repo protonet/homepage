@@ -1,0 +1,72 @@
+.cebit-logo-container {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 10px 0;
+  margin: 90px 0 40px;
+  height: 50px;
+}
+
+.cebit-logo-container li {
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  height: 50px;
+}
+
+.cebit-logo-container h4 {
+  color: #666;
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+
+.cebit-logo-container a {
+  float: left;
+  margin-left: 16px;
+  height: 50px;
+  background: url('img/logo_sprite_v1.png') no-repeat 0 0;
+}
+
+.cebit-logo-container li:first-child,
+.cebit-logo-container a:first-child {
+  margin-left: 0;
+}
+
+.cebit-logo-container .deskwanted {
+  background-position: 0 center;
+  width: 184px;
+}
+
+.cebit-logo-container .car2go {
+  background-position: -244px center;
+  width: 78px;
+}
+
+.cebit-logo-container .dsn {
+  background-position: -382px center;
+  width: 207px;
+}
+
+.cebit-logo-container .betahaus {
+  background-position: -651px center;
+  width: 157px;
+}
+
+.cebit-logo-container .bitkom {
+  background-position: -868px center;
+  width: 152px;
+}
+
+.cebit-logo-container .cebit {
+  background-position: -1080px center;
+  width: 52px;
+}
+
+.dsn-banner {
+  display: block;
+  width: 728px;
+  height: 90px;
+  margin: -30px auto 30px;
+  background: url(img/banner_dsn.jpg) no-repeat;
+}
