@@ -197,7 +197,8 @@ footer p{
 .input label{
   display:block;
 }
-.input input{
+.input input[type="text"],
+.input input[type="email"]{
   width: 240px;
   padding:2px 3px;
 }
