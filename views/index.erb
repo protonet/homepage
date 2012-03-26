@@ -58,7 +58,7 @@
         <img src="img/hard_soft_small.png" width="67" height="67" alt="Hard Soft Small">
         <h3>Hardware und Software</h3>
         <p>
-          Hotspot, Datenspeicher, leistungsfähiger Rechner gepaart mit schlanker Software in perfekter Harmonie für volle Ausschöpfung des Potentials.
+          Router, Datenspeicher, leistungsfähiger Rechner gepaart mit schlanker Software in perfekter Harmonie für volle Ausschöpfung des Potentials.
           </p>
       </a>
     </li>
@@ -129,6 +129,13 @@
     <div class="input">
       <label for="message">Nachricht:</label>
       <textarea id="message" name="message" placeholder="Ich habe Interesse."><%= @message %></textarea>
+    </div>
+    <div class="input">
+      <label for="newsletter">
+        <input type="hidden" name="newsletter" value="0">
+        <input id="newsletter" name="newsletter" type="checkbox" value="1">
+        Newsletter abbonieren.
+      </label>
     </div>
     <div class="button">
       <input type="submit" value="abschicken">

@@ -21,8 +21,8 @@ für kleine und mittelständische Unternehmen.">
 <body>
   <% if @status == "success" %>
     <div id="success">Danke für die Nachricht, wir werden schnellstmöglich antworten.</div>
-  <% elsif @status == "error" %>
-    <div id="error">Ups, da ist etwas schief gelaufen.</div>
+  <% elsif @status %>
+    <div id="error"><%= @status %></div>
   <% end %>
 
   <header>

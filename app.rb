@@ -60,36 +60,46 @@ get '/impressum' do
 end
 
 post '/contact' do
+  
   @name = params[:name]
   @email = params[:email]
   @tel = params[:tel]
   @message = params[:message]
   @index = true
-  @status = "error"
-  
-  if settings.development?
-    puts "**********"
-    puts message_body
-    puts "**********"
-    @status = "success"
+    
+  if @name.nil? || @name.empty? || @email.nil? || 
+    @email.empty? || !@email.match(/\A[^@]+@([^@\.]+\.)+[^@\.]+\z/) 
+  then
+    @status = "Bitte überprüfen Sie Ihre Angaben."
   else
-    if params[:newsletter] == true
-      response = Net::HTTP.post_form(URI.parse("http://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=75b02e1b0a"), {
-        "EMAIL" => @email
-      })
-    end
-    begin 
-      sales.speak(message_body)
+    if settings.development?
+      puts "**********"
+      puts message_body
+      puts "**********"
       @status = "success"
-    rescue
-      if Pony.mail( :to => "henning@protonet.info",
-           :from => "#{@email}",
-           :subject => "#{@name} via protonet.info",
-           :body => message_body
-         ) 
+    else
+      @status = "Ups. Da ist etwas schiefglaufen"
+      if params[:newsletter] == true
+        Net::HTTP.post_form(URI.parse("http://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=75b02e1b0a"), {
+          "EMAIL" => @email
+        })
+      end
+      begin 
+        sales.speak(message_body)
         @status = "success"
+      rescue
+        if Pony.mail( :to => "henning@protonet.info",
+             :from => "#{@email}",
+             :subject => "#{@name} via protonet.info",
+             :body => message_body
+           ) 
+          @status = "success"
+        end
       end
     end
+  end
+  if @status == "success"
+    @name = @email = @tel = @message = nil
   end
   erb :index
 end
