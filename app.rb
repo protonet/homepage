@@ -6,6 +6,7 @@ require 'sinatra'
 require 'protolink'
 require 'yaml'
 require 'pony'
+require 'net/http'
 
 configure do
   set :public_folder, Proc.new { File.join(root, "public") }
@@ -73,7 +74,9 @@ post '/contact' do
     @status = "success"
   else
     if params[:newsletter] == true
-      
+      response = Net::HTTP.post_form(URI.parse("http://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=75b02e1b0a"), {
+        "EMAIL" => @email
+      })
     end
     begin 
       sales.speak(message_body)
