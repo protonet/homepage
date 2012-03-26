@@ -79,8 +79,8 @@ post '/contact' do
       @status = "success"
     else
       @status = "Ups. Da ist etwas schiefglaufen"
-      if params[:newsletter] == true
-        Net::HTTP.post_form(URI.parse("http://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&amp;id=75b02e1b0a"), {
+      if params[:newsletter]
+        respose = Net::HTTP.post_form(URI.parse("http://protonet.us4.list-manage.com/subscribe/post?u=c9e8e52c812dee7bfd031a95c&id=75b02e1b0a"), {
           "EMAIL" => @email
         })
       end
