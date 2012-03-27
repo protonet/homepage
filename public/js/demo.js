@@ -4,7 +4,7 @@ if (protonet.config.user_is_stranger) {
   $account.css({
     "position":"absolute",
     "bottom":"48px",
-    "right":"70px",
+    "right":"60px",
     "width": "246px",
     "height": "43px",
     "background":"url(http://protonet.info/demo/account.png)"
