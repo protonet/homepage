@@ -7,7 +7,7 @@ if (protonet.config.user_is_stranger) {
     "right":"20px",
     "width": "295px",
     "height": "50px",
-    "background":"url(http://localhost:9393/demo/account.png)"
+    "background":"url(http://protonet.info/demo/account.png)"
   });
   $('.inner-body .login').append($account);
 
@@ -18,7 +18,7 @@ if (protonet.config.user_is_stranger) {
     "left":"-115px",
     "width": "243px",
     "height": "66px",
-    "background":"url(http://localhost:9393/demo/box.png)"
+    "background":"url(http://protonet.info/demo/box.png)"
   });
   $('.inner-body').append($box);
 
@@ -29,7 +29,7 @@ if (protonet.config.user_is_stranger) {
     "left":"-150px",
     "width": "178px",
     "height": "120px",
-    "background":"url(http://localhost:9393/demo/channel.png)"
+    "background":"url(http://protonet.info/demo/channel.png)"
   });
   $('.inner-body .main-content').append($channel);
 
@@ -40,7 +40,7 @@ if (protonet.config.user_is_stranger) {
     "left":"-60px",
     "width": "396px",
     "height": "93px",
-    "background":"url(http://localhost:9393/demo/message.png)"
+    "background":"url(http://protonet.info/demo/message.png)"
   });
   $('.inner-body .main-content').append($message);
 
@@ -51,7 +51,7 @@ if (protonet.config.user_is_stranger) {
     "right":"-200px",
     "width": "197px",
     "height": "124px",
-    "background":"url(http://localhost:9393/demo/files.png)"
+    "background":"url(http://protonet.info/demo/files.png)"
   });
   $('#file-widget').append($files);
 
@@ -62,7 +62,7 @@ if (protonet.config.user_is_stranger) {
     "right":"-170px",
     "width": "171px",
     "height": "97px",
-    "background":"url(http://localhost:9393/demo/users.png)"
+    "background":"url(http://protonet.info/demo/users.png)"
   });
   $('#user-widget').append($users);
 }
