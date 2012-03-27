@@ -119,6 +119,10 @@ footer p{
 #main .teaser p small{
   font-size:12px;
 }
+#main .teaser p small span{
+  display:block;
+  margin-top:-10px;
+}
 #main nav{
   margin: 0px -50px 50px;
   overflow:hidden;
