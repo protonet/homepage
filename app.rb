@@ -1,5 +1,5 @@
 # encoding: UTF-8
-# dev hint: shotgun login.rb
+# dev hint: shotgun app.rb
 
 require 'rubygems'
 require 'sinatra'
@@ -57,6 +57,10 @@ end
 
 get '/impressum' do
   erb :imprint
+end
+
+get '/datenschutz' do
+  erb :privacy
 end
 
 post '/contact' do

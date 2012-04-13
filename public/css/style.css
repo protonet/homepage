@@ -212,11 +212,11 @@ footer p{
   height: 100px;
 }
 
-
 #main section h2{
   font-weight:normal;
 }
-#main section p{
+#main section p,
+#main section ul{
   color:#777;
   line-height:22px;
 }
