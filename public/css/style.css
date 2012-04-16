@@ -243,3 +243,79 @@ footer p{
   float:right;
   margin:0 0 0 50px;
 }
+
+#main .testimonials ul{
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom:120px;
+  margin-bottom:0;
+  position:relative;
+}
+#main .testimonials ul li{
+  float: left;
+  margin: 0 12px;
+}
+#main .testimonials ul li.active:after{
+  display: block;
+  position: relative;
+  bottom: 10px;
+  left: 58px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom: 20px solid #eee;
+}
+#main .testimonials ul li:hover p,
+#main .testimonials ul li.active p{
+  display:block;
+}
+#main .testimonials .xing a{
+  background-position: -15px 0;
+}
+#main .testimonials .ct a{
+  background-position: -188px 0;
+}
+#main .testimonials .betahaus a{
+  background-position: -368px 0;
+}
+#main .testimonials .oest a{
+  background-position: -548px 0;
+}
+#main .testimonials .oh24 a{
+  background-position: -712px 0;
+}
+#main .testimonials ul li a{
+  display:block;
+  text-indent:-9999px;
+  width: 150px;
+  height: 100px;
+  background: url(/img/testimonials/sprite.png);
+}
+#main .testimonials ul li p{
+  display:none;
+  position:absolute;
+  bottom:0;
+  left:0;
+  font-family: protonet, Verdana, sans-serif;
+  background: #eee;
+  padding: 30px 60px 30px 60px;
+  color: #777;
+  font-size: 20px;
+  line-height: 30px;
+  height:55px;
+  width: 758px;
+}
+#main .testimonials p:before{
+  content: "“";
+  font-size:70px;
+  position:absolute;
+  top: 45px;
+  left: 25px;
+  font-family: Georgia, Times;
+}
+#main .testimonials ul li p span{
+  margin-left:10px;
+  font-size:14px;
+}
