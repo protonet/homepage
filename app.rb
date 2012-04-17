@@ -35,7 +35,6 @@ helpers do
 Neue Nachricht von der Website:
 #{@name} <#{@email}>
 #{@message}
-#{(@tel == "" ? "" : "\nTel: #{@tel}")}
      MEEP
   end
   
@@ -67,7 +66,6 @@ post '/contact' do
   
   @name = params[:name]
   @email = params[:email]
-  @tel = params[:tel]
   @message = params[:message]
   @index = true
     
@@ -103,7 +101,7 @@ post '/contact' do
     end
   end
   if @status == "success"
-    @name = @email = @tel = @message = nil
+    @name = @email = @message = nil
   end
   erb :index
 end
