@@ -48,7 +48,7 @@ if (protonet.config.user_is_stranger) {
   $files.css({
     "position":"absolute",
     "top":"-10px",
-    "right":"-149px",
+    "right":"-148px",
     "width": "165px",
     "height": "87px",
     "background":"url(http://protonet.info/demo/files.png)"
@@ -58,8 +58,8 @@ if (protonet.config.user_is_stranger) {
   var $users = $("<div id='hint-users'>");
   $users.css({
     "position":"absolute",
-    "top":"-63px",
-    "right":"-173px",
+    "top":"-85px",
+    "right":"-124px",
     "width": "188px",
     "height": "65px",
     "background":"url(http://protonet.info/demo/users.png)"
