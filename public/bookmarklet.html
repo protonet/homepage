@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<title>protonet Bookmarklet Generator</title>
+<style>
+  html {
+    background: #AAA -moz-linear-gradient(top, #EEE, #AAA);
+    background: #AAA -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#AAA));
+    height: 100%;
+    position: relative;
+  }
+  
+  body {
+    font-family: Verdana, Arial, sans-serif;
+    position: relative;
+  }
+  
+  a[href*="protonet.info"] {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background: #fff;
+    box-shadow: 0 0 10px #000;
+    padding: 30px;
+  }
+  
+  section {
+    top: 150px;
+    position: absolute;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+    display: block;
+  }
+  
+  .bookmarklet {
+    display: block;
+    background: #487bff;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    border: 2px dashed #000;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    cursor: move;
+  }
+</style>
+
+<section>
+  <form>
+    <h1>Bookmarklet erstellen</h1>
+    <p>Ermöglicht einfachstes Teilen von Webseiten im protonet.</p>
+    <label>
+      <strong>URL zum protonet:</strong>
+      <input type="url" value="http://protonet/" id="protonet-url">
+    </label>
+    <label>
+      <button>Bookmarklet erstellen</button>
+    </label>
+    <output id="bookmarklet-container"></output>
+  </form>
+  <a href="http://protonet.info">&copy; 2012 protonet</a>
+</section>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+  $("form").submit(function() {
+    var url         = $("#protonet-url").val(),
+        bookmarklet = "javascript:(function() { window.open('#{url}' + encodeURIComponent(location.href), 'protonet'); return; })()";
+    if (url.indexOf("?") === -1) {
+      url += "?url=";
+    } else {
+      url += "&url=";
+    }
+    bookmarklet = bookmarklet.replace("#{url}", url);
+    var $anchor = $("<a>", { href: bookmarklet, draggable: "true", text: "Auf protonet teilen!", "class": "bookmarklet" }).hide();
+    
+    $("#bookmarklet-container").html($anchor);
+    $("<p>", { text: "Folgenden Link in die Lesezeichenleiste ziehen:" }).insertBefore($anchor);
+    
+    $anchor.fadeIn();
+    return false;
+  });
+</script>
