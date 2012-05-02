@@ -23,10 +23,10 @@ testimonials:
 nav:
   files:
     headline: Data sharing with cloud character
-    paragraph: Full-fledged network attached storage for clearly arranged data storage with easy and secure filesharing with up to 15 terabytes.
+    paragraph: Full-fledged network attached storage for clearly arranged data storage with easy and secure file sharing with up to 15 terabytes.
   collaboration:
     headline: Secure communication with instant search
-    paragraph: Closed channels for projects, workgroups and departments allow for consequent documentation of communication.
+    paragraph: Closed channels for projects, work groups and departments allow for consequent documentation of communication.
   global:
     headline: Global access to all data
     paragraph: Compatibility with every browser and operating system allows access to all data and communication from anywhere.
@@ -78,7 +78,6 @@ content:
         placeholder: Give me more infos.
       newsletter: subscribe Newsletter.
       button: send
-      
       
 team:
   ali: |
