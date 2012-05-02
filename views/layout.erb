@@ -34,9 +34,6 @@ für kleine und mittelständische Unternehmen.">
       <a href="/team" class="<%= 'active' if @team %>" title="Team">Team</a>
       <a href="http://demo.protonet.info" title="Demo" target="_blank">Demo</a>
       <a href="http://blog.protonet.info" title="Blog" target="_blank">Blog</a>
-      <a href="?lang=<%= t.lang.key %>" hreflang="<%= t.lang.key %>" class="<%= t.lang.key %>" title="<%= t.lang.change %>">
-        <%= t.lang.change %>
-      </a>
     </nav>
   </header>
   <div id="main">
@@ -44,6 +41,7 @@ für kleine und mittelständische Unternehmen.">
   </div>
   <footer>
     <ul>
+      <li><a href="?lang=<%= t.lang.key %>" hreflang="<%= t.lang.key %>" class="<%= t.lang.key %>" title="<%= t.lang.change %>"><%= t.lang.change %></a></li>
       <li><a href="/newsletter">Newsletter</a></li>
       <li><a href="http://blog.protonet.info" target="_blank">Blog</a></li>
       <li><a href="/team#office">Kontakt</a></li>

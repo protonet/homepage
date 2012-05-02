@@ -55,19 +55,6 @@ header nav a.active{
   color:#1F1F1F;
   border-bottom: 1px solid #ff7f31;
 }
-header nav a.en,
-header nav a.de{
-  text-indent:9999px;
-  display:inline-block;
-  height:24px;
-  width:32px;
-  background: url(/img/flags.png);
-  background-position:0 -4px;
-  border:none;
-}
-header nav a.de{
-  background-position:0 28px;
-}
 footer{
   font-size:11px;
 }
@@ -83,6 +70,21 @@ footer ul li{
 }
 footer ul li a{
   text-decoration:none;
+}
+
+footer li a.en,
+footer li a.de{
+  line-height: 10px;
+  text-indent:9999px;
+  display:inline-block;
+  height:12px;
+  width:16px;
+  background: url(/img/flags.png);
+  background-position:0 0px;
+  border:none;
+}
+footer li a.de{
+  background-position:0 12px;
 }
 footer p{
   margin:0;
