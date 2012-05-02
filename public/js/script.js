@@ -27,6 +27,6 @@
       $active.next("li").find("a").trigger("click");
     }
     
-  }, 3000);
+  }, 5000);
   
 })(jQuery)
