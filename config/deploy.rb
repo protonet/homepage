@@ -20,8 +20,8 @@ set :repository,  'git://github.com/henningthies/homepage.git'
 set :ssh_options, {:forward_agent => true}
 set :port, 22100
 
-role :app, "dev.henning-thies.de", :primary => true
-role :web, "dev.henning-thies.de", :primary => true
+role :app, "dev.claasmartin.com", :primary => true
+role :web, "dev.claasmartin.com", :primary => true
 
 # tasks
 namespace :deploy do
