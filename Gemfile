@@ -1,7 +1,12 @@
 source :gemcutter
 
 gem 'sinatra'
-gem 'shotgun'
 gem 'protolink', :git => "git@github.com:protonet/protolink.git"
-gem 'capistrano'
 gem 'pony'
+gem 'sinatra-r18n'
+
+group :development do
+  gem 'capistrano'
+  gem 'shotgun'
+  gem 'thin'
+end

@@ -7,19 +7,25 @@ require 'protolink'
 require 'yaml'
 require 'pony'
 require 'net/http'
+require 'sinatra/r18n'
+
+###############
+# configuration
+###############
 
 configure do
   set :public_folder, Proc.new { File.join(root, "public") }
   enable :sessions, :logging
+  set :default_locale, 'de'
 end
 
 configure :development do
   set :development, true
 end
 
-before do
-  @config = YAML::load(File.open(File.dirname(__FILE__) + "/config.yml"))
-end
+########
+# helper
+########
 
 helpers do
   def protonet
@@ -38,7 +44,27 @@ Neue Nachricht von der Website:
      MEEP
   end
   
+  def preferred_language
+    env['HTTP_ACCEPT_LANGUAGE'].scan(/^(..)/).flatten.first
+  rescue # Just rescue anything if the browser messed up badly.
+    'de'
+  end
+  
 end
+
+########
+# before
+########
+
+before do
+  @config = YAML::load(File.open(File.dirname(__FILE__) + "/config.yml"))
+  session[:locale] = params[:lang] if params[:lang]
+  session[:locale] ||= preferred_language
+end
+
+########
+# static 
+########
 
 get '/' do 
   @index = true
@@ -105,6 +131,10 @@ post '/contact' do
   end
   erb :index
 end
+
+###################
+# github deployhook
+###################
 
 post '/github' do
   system('cd /home/deploy/protonet/homepage/current && /usr/bin/git pull origin master')

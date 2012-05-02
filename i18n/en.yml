@@ -1,0 +1,80 @@
+lang:
+  change: deutsch
+  key: de
+
+teaser:
+  first_subline: |
+    Protonet is the social IT-infrastructure<br>
+    for small and medium-sized enterprises.
+  second_subline: |
+    Collaboration in teams and
+    <br> with customers becomes easy and secure.
+  taxes: |
+    *monthly plus VAT: 177,31 Euro 
+    <span>Onetime setupfee 599 Euro (incl. VAT: 712,81 Euro)</span>
+
+testimonials:
+  xing: A very smart solution for project based collaboration. Protonet is easy to understand and without hassle external collaborators can be invited.
+  ct: Protonet is a logical and an easy to use concept.
+  betahaus: Protonet eases a lot in betahaus. The co-worker have a platform where they can reach everyone to chat and share information or data.
+  fotomaki: We had to built in additional hard drives, because we need to share large photo files a lot. The support of protonet is fast and straightforward.
+  oh24: At my customers protonet runs with additional features like e-mail connection smoothly for months. I love to work with the guys, everything is so non-bureaucratic.
+
+nav:
+  files:
+    headline: Data sharing with cloud character
+    paragraph: Full-fledged network attached storage for clearly arranged data storage with easy and secure filesharing with up to 15 terabytes.
+  collaboration:
+    headline: Secure communication with instant search
+    paragraph: Closed channels for projects, workgroups and departments allow for consequent documentation of communication.
+  global:
+    headline: Global access to all data
+    paragraph: Compatibility with every browser and operating system allows access to all data and communication from anywhere.
+  usability:
+    headline: Intuitive usability
+    paragraph: The browser-based interface for users and administrators does not require IT know-how and is ready for action with the push of one button.
+  hardsoft:
+    headline: Hardware and software
+    paragraph: Hotspot, data storage, powerful computer paired with lean software in perfect harmony comes to full potential.
+
+content:
+  files:
+    headline: Data sharing with cloud character
+    paragraph: Users can put their data on two to 15 terabyte storage. The files interface reminds of the familiar explorer (pc) or finder (mac) with files only visible for authorized users. The integrated hard drives in a RAID guarantee maximum reliability by mirroring. The protonet box is  the mini-computer center for small offices. In case one hard drives drops out at least one second is active, assuring daily business can continue. In such case the administrator will be notified right away.
+  collaboration:
+    headline: Closed communication with instant search
+    paragraph: The user permission allocation is done by channels. Channels can be created for every department, project or topic. The employees are assigned to these channels, but also customers and other external collaborators can be invited and given limited access to the functions of the protonet. The chat within the channel is continuous and can be used as an archive. The comfortable search remains fast, even with long communication history, this way old messages can be found fast without problem.
+  global:
+    headline: Global access to all data
+    paragraph: The box can be used for internal collaboration, but every user can access communication and files from anywhere via the Publish-to-Web. Thanks to compatibility with every web browser (Internet Explorer 8 and higher) access is not only possible with every PC or Mac but also with most mobile devices. We recommend activating Publish-to-Web to tap the full potential of the functions. Also it is mandatory for our hardware monitoring, possibly remote access, regular updates and backups in the cloud.
+  usability:
+    headline: Intuitive usability
+    paragraph: The interface in the web browser is easy to handle for users and administrators. Familiar browser functionality paired with intuitive elements from windows or mac let every function appear right where it belongs. Beloved features are the drag & drop for the data storage, the lean menus that concentrate on the main functions and the clear view on subscribed channels, users and files.
+  hardsoft:
+    headline: Hardware and software in perfect harmony
+    paragraph: Perfect Interaction of hardware and software ensures maximum performance with every protonet box. Hotspot functionality and state of the art computer hardware combined smartly with our software fulfills the desire for “it just works”-functionality. Low power consumption and maximum durability are important to us. Therefor we currently use the dual core processor E-350, 4 GB Ram, 2x2 terabyte Western Digital (Green Series) hard drives and a powerful wireless N adapter. The software is based on Ubuntu Linux and is programmed with Node.js and Ruby on Rails.
+  contact:
+    headline: Preise und weitere Informationen
+    paragraph: | 
+      <p>
+        Um bestmöglichen Support zu gewährleisten und um Ihre Wünsche in die Produktentwicklung einfließen zu lassen, kostet die protonet Box monatlich 149,- Euro*. Inklusive sind E-Mail Support, Software Updates mit regelmäßig neuen Features, Antivirenschutz, Hardwareüberwachung und auf Wunsch Remotezugriff bei Problemen. Die Software-Updates lassen sich über die Administrationsoberfläche per Knopfdruck installieren. Die Vertragslaufzeit beträgt 12 Monate und ist anschließend monatlich kündbar. Die Einrichtungsgebühr beträgt 599,- Euro*.
+      </p>
+      <p>
+        <strong>Für weitere Informationen oder Ihren Bestellwunsch schreiben Sie uns über das nebenstehende Formular an. Wir setzen uns schnellstmöglich mit Ihnen in Verbindung.</strong>
+      </p>
+      <p>
+        <small>*Alle Preise zzgl. MwSt.; Monatlich 177,31 Euro, einmalige Einrichtung 712,81 Euro</small>
+      </p>
+    form: 
+      headline: Get in touch.
+      name:
+        label: "Name:"
+        placeholder: John Doe
+      email:
+        label: "Email:"
+        placeholder: john.doe@example.com
+      message: 
+        label: "Message:"
+        placeholder: Give me more infos.
+      newsletter: subscribe Newsletter.
+      button: send
