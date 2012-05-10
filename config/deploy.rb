@@ -3,25 +3,25 @@ require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 require "bundler/capistrano"
 
 set :normalize_asset_timestamps, false
-set :rvm_ruby_string, 'ruby-1.9.3-p0@protonet-homepage'
+set :rvm_ruby_string, 'ruby-1.9.3-p194'
 set :rvm_type, :system
 
 set :scm, :git
 set :branch, 'master'
-set :user, 'deploy'
+set :user, 'protonet'
 
 set :application, "homepage"
-set :deploy_to, "/home/deploy/protonet/homepage"
+set :deploy_to, "/home/protonet/homepage"
 
 set :use_sudo, false
 
 set :deploy_via, :remote_cache
-set :repository,  'git://github.com/henningthies/homepage.git'
+set :repository,  'git://github.com/protonet/homepage.git'
 set :ssh_options, {:forward_agent => true}
-set :port, 22100
+set :port, 22
 
-role :app, "dev.claasmartin.com", :primary => true
-role :web, "dev.claasmartin.com", :primary => true
+role :app, "78.47.145.222", :primary => true
+role :web, "78.47.145.222", :primary => true
 
 # tasks
 namespace :deploy do
