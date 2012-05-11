@@ -14,10 +14,11 @@ if (protonet.config.user_is_stranger) {
   var $box = $("<div id='hint-box'>");
   $box.css({
     "position":"absolute",
-    "top":"40px",
-    "left":"-60px",
+    "top":"99px",
+    "left":"50%",
     "width": "184px",
     "height": "56px",
+    "margin-left": "-538px",
     "background":"url(http://protonet.info/demo/box.png)"
   });
   $('.inner-body').append($box);
