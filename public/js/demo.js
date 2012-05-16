@@ -3,7 +3,7 @@ if (protonet.config.user_is_stranger) {
   var $account = $("<div id='hint-account'>");
   $account.css({
     "position":"absolute",
-    "bottom":"48px",
+    "bottom":"73px",
     "right":"60px",
     "width": "246px",
     "height": "43px",
