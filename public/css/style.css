@@ -334,3 +334,13 @@ footer p{
   margin-left:10px;
   font-size:14px;
 }
+header nav a.social {
+  margin: 0;
+}
+header nav a.social {
+  border-bottom: none;
+}
+header nav a.social img {
+  margin: 0;
+  height: 22px;
+}
