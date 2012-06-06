@@ -35,6 +35,7 @@ a:hover{
 
 header{
   text-align:right;
+  position: relative;
 }
 header a img{
   float:left;
@@ -54,6 +55,19 @@ header nav a:hover,
 header nav a.active{
   color:#1F1F1F;
   border-bottom: 1px solid #ff7f31;
+}
+header nav a.social {
+  border-bottom: none;
+  margin: 0;
+}
+header nav a.social img {
+  margin-bottom: -4px;
+  height: 22px;
+}
+header img.like-teaser {
+  position: absolute;
+  right: 0px;
+  top: 72px;
 }
 footer{
   font-size:11px;
@@ -333,14 +347,4 @@ footer p{
 #main .testimonials ul li p span{
   margin-left:10px;
   font-size:14px;
-}
-header nav a.social {
-  margin: 0;
-}
-header nav a.social {
-  border-bottom: none;
-}
-header nav a.social img {
-  margin: 0;
-  height: 22px;
 }
