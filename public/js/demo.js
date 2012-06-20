@@ -14,11 +14,11 @@ if (protonet.config.user_is_stranger) {
   var $box = $("<div id='hint-box'>");
   $box.css({
     "position":"absolute",
-    "top":"99px",
+    "top":"90px",
     "left":"50%",
     "width": "184px",
     "height": "56px",
-    "margin-left": "-538px",
+    "margin-left": "-550px",
     "background":"url(http://protonet.info/demo/box.png)"
   });
   $('.inner-body').append($box);
@@ -48,8 +48,8 @@ if (protonet.config.user_is_stranger) {
   var $files = $("<div id='hint-files'>");
   $files.css({
     "position":"absolute",
-    "top":"-10px",
-    "right":"-148px",
+    "top":"-40px",
+    "right":"-125px",
     "width": "165px",
     "height": "87px",
     "background":"url(http://protonet.info/demo/files.png)"
@@ -59,8 +59,8 @@ if (protonet.config.user_is_stranger) {
   var $users = $("<div id='hint-users'>");
   $users.css({
     "position":"absolute",
-    "top":"-85px",
-    "right":"-124px",
+    "top":"-72px",
+    "right":"-25px",
     "width": "188px",
     "height": "65px",
     "background":"url(http://protonet.info/demo/users.png)"
