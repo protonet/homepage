@@ -60,7 +60,7 @@ if (protonet.config.user_is_stranger) {
   $users.css({
     "position":"absolute",
     "top":"-72px",
-    "right":"-25px",
+    "right":"-55px",
     "width": "188px",
     "height": "65px",
     "background":"url(http://protonet.info/demo/users.png)"
