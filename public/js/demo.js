@@ -1,5 +1,4 @@
-if (protonet.config.user_is_stranger) {
-
+if (protonet.config.user_is_stranger && $(".welcome").length) {
   var $account = $("<div id='hint-account'>");
   $account.css({
     "position":"absolute",
